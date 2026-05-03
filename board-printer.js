@@ -39,3 +39,10 @@ export function checkIfNoMovesLeft(board) {
   }
   return true;
 }
+
+let board = [
+  ["_", "_", "_"],
+  ["_", "_", "_"],
+  ["_", "_", "_"],
+];
+printBoard(board);
