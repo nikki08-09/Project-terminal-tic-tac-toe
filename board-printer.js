@@ -29,4 +29,6 @@ export function printBoard(board) {
         - return true if there are no moves left to make (there are no more '_' values)
         - return false if there are still moves that can be made
 */
-export function checkIfNoMovesLeft(board) {}
+export function checkIfNoMovesLeft(board) {
+  for (let i = 0; i < board.length; i++) {}
+}
