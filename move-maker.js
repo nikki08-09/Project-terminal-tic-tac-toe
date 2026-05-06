@@ -16,7 +16,7 @@
         ];
 */
 function validateMove(move, board) {
-    
+    let moveArr = move.split(",");
 
 }
 
