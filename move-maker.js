@@ -38,6 +38,14 @@ export function makeMove(board, move, player) {
         for (let i = 1; i <=3; i++){
             for (let j = 1; j <=3; j++)
             {
+                if (i === parseInt(moveArr[0]) && j === parseInt(moveArr[1]))
+                {
+                    let a = i-1;
+                    let b = j-1;
+                    console.log("Player 1 move");
+                    board[a][b] = 'X';
+                    return board;
+                }
             }
         }
     }
@@ -45,6 +53,14 @@ export function makeMove(board, move, player) {
         for (let i = 1; i <=3; i++){
             for (let j = 1; j <=3; j++)
             {
+                if (i === parseInt(moveArr[0]) && j === parseInt(moveArr[1]))
+                {
+                    let a = i-1;
+                    let b = j-1;
+                    console.log("Player 2 move");
+                    board[a][b] = 'O';
+                    return board;
+                }
             }
         }
      }
