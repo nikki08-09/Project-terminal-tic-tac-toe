@@ -27,6 +27,10 @@ function validateMove(move, board) {
         console.log("Try again... Move should be numbers");
         return false;
     }
+    if (row < 1 || row > 3 || col < 1 || col > 3) {
+        console.log("Try again... Move should be between 1 and 3");
+        return false;
+    }
 
 }
 
