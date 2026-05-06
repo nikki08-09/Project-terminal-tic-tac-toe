@@ -1,10 +1,11 @@
-import prompt from 'prompt';
+import promptSync from 'prompt-sync';
 import { isGameOver } from './status-checker.js';
 import { makeMove } from './move-maker.js';
 import { printBoard } from './board-printer.js';
 
+const prompt = promptSync();
 prompt.message = '';
-prompt.start();
+
 
 async function playGame() {
     let moveNumber = 0;
@@ -29,8 +30,7 @@ async function playGame() {
 }
 
 async function getMove(player) {
-    let move = await prompt.get(player);
-    return move[player];
+    return prompt(`${player}: `);
 }
 
 playGame();
