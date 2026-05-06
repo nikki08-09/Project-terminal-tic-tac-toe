@@ -17,6 +17,10 @@
 */
 function validateMove(move, board) {
     let moveArr = move.split(",");
+    if (moveArr.length !== 2) {
+        console.log("Try again... Length of move should be 2");
+        return false;
+    }
 
 }
 
