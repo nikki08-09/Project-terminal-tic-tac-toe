@@ -21,6 +21,12 @@ function validateMove(move, board) {
         console.log("Try again... Length of move should be 2");
         return false;
     }
+    let row = parseInt(moveArr[0]);
+    let col = parseInt(moveArr[1]);
+    if (isNaN(row) || isNaN(col)) {
+        console.log("Try again... Move should be numbers");
+        return false;
+    }
 
 }
 
