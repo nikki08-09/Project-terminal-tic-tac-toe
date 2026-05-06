@@ -80,3 +80,7 @@ export function makeMove(board, move, player) {
     }
   }
 }
+module.exports = {
+  validateMove,
+  makeMove,
+};
