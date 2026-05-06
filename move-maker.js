@@ -54,7 +54,7 @@ export function makeMove(board, move, player) {
   if (!validateMove(move, board)) {
     return false;
   }
-  if (player === ('X')) {
+  if (player === "X") {
     for (let i = 1; i <= 3; i++) {
       for (let j = 1; j <= 3; j++) {
         if (i === parseInt(moveArr[0]) && j === parseInt(moveArr[1])) {
@@ -66,7 +66,7 @@ export function makeMove(board, move, player) {
         }
       }
     }
-  } else if (player === ('O')) {
+  } else if (player === "O") {
     for (let i = 1; i <= 3; i++) {
       for (let j = 1; j <= 3; j++) {
         if (i === parseInt(moveArr[0]) && j === parseInt(moveArr[1])) {
