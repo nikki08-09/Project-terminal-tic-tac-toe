@@ -34,7 +34,14 @@ function checkRow(board, player, rowNumber) {
     Return true if the player has made a move in all 3 squares in the column
     Otherwise, return false
 */
-function checkColumn(board, player, columnNumber) {}
+function checkColumn(board, player, columnNumber) {
+  for (let i = 0; i <= 2; i++) {
+    if (board[i][columnNumber] !== player) {
+      return false;
+    }
+  }
+  return true;
+}
 
 /*
     Given 2 parameters:
