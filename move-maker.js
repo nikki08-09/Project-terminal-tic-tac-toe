@@ -31,6 +31,10 @@ function validateMove(move, board) {
         console.log("Try again... Move should be between 1 and 3");
         return false;
     }
+    if (board[row - 1][col - 1] !== '_') {
+        console.log("Try again... Space is already occupied");
+        return false;
+    }
 
 }
 
