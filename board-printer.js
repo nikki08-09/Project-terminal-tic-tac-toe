@@ -46,4 +46,3 @@ let board = [
   ["_", "_", "_"],
 ];
 printBoard(board);
-const moveMaker = require("./move-maker");
